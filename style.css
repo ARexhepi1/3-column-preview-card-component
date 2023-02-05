@@ -1,0 +1,149 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; 
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6eff5;
+}
+
+.container {
+  width: 327px;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--Very-light-gray);
+  margin-bottom: 25px;
+}
+
+img {
+  margin-bottom: 35px;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--Transparent-white);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-color: var(--Very-light-gray);
+  color: none;
+  mix-blend-mode: screen;
+  padding: 11px 31px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid var(--Transparent-white);
+  background-color: transparent;
+  color: var(--Transparent-white);
+}
+
+.sedans {
+  background-color: var(--Bright-orange);
+  padding: 48px;
+  text-align: left;
+}
+
+.suv {
+  background-color: var(--Dark-cyan);
+  padding: 48px;
+  text-align: left;
+}
+
+.luxury {
+  background-color: var(--Very-dark-cyan);
+  padding: 48px;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    width: 920px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}
